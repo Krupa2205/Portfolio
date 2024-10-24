@@ -1,0 +1,438 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Reduce padding when sticky for compact look */
+header.sticky nav {
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center; /* Centering the navbar */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header nav .left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav .right ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav .right ul li {
+  display: inline;
+}
+
+header nav .right ul li a {
+  font-size: 1.5rem;
+  display: inline-block;
+  transition: transform 0.1s ease;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+header nav .right ul li a:hover {
+  /* color: #ff4081; */
+  background-color: #ff4081;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.8;
+}
+
+/* Home Section */
+.firstSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f4; /* Soft background color */
+}
+
+.leftSection {
+  flex: 1; /* Adjusts size according to the content */
+  padding-right: 20px; /* Space between text and image */
+}
+
+.leftSection h1 {
+  font-size: 2.5rem; /* Larger font for emphasis */
+  color: #333; /* Darker text color */
+}
+
+.leftSection h2 {
+  font-size: 2rem;
+  color: #555; /* Slightly lighter text color */
+}
+
+.purple {
+  color: #1A1A19; /* Purple color for the name */
+}
+
+.passion-container {
+  margin-top: 20px; /* Space above the animated element */
+  font-size: 1.5rem; /* Size for the animated text */
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+
+
+
+/* Skills Section */
+#skills {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px;
+  flex: 1 1 200px;
+}
+
+.skill i {
+  font-size: 2.5rem;
+  color: #ff4081;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill i:hover {
+  transform: scale(1.2);
+}
+
+/* Projects Section */
+#projects {
+  background: #fff;
+  padding: 60px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.project {
+  margin-bottom: 40px; /* Adding space between project items */
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 2rem;
+  color: #ff4081;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.project a {
+  display: inline-block;
+  background: #ff4081;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 15px; /* Adding space between project links */
+  transition: transform 0.3s ease, background 0.3s ease;
+  justify-content: center;
+}
+
+/* Cool hover effect for project links */
+.project a:hover {
+  background: #080706;
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* connect Section */
+#connect {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  gap: 4px;
+}
+
+#connect ul {
+  list-style: none;
+  padding: 0;
+}
+
+#connect ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#connect ul li a {
+  color: #ff4081;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#connect ul li a:hover {
+  color: #ff8a65;
+}
+
+#connect a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2em;
+  margin: 0 10px; /* Space between links */
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Scroll to Top Button */
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff4081;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: none; /* Initially hidden */
+}
+
+/* Show the button when scrolled */
+.scrollToTop.visible {
+  display: block;
+}
+
+/* Hover effect */
+.scrollToTop:hover {
+  background-color: #ff8a65;
+  transform: translateY(-5px);
+}
+
+/* Arrow Icon Style */
+.scrollToTop i {
+  font-size: 1.5rem;
+}
+
+
+
+/* project section */
+
+
+.projectsSection {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Project Section */
+.projectsSection {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Flexbox Layout for Project Items (Similar to Skills Section) */
+.project-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Individual Project Styling (Similar to Skills) */
+.project {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Title Styling */
+.project h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Project Link Styling (Same as Before) */
+.project-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  background-color: #ff4081;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: transparent;
+  color: #ff4081;
+  border-color: #ff4081;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Adjust hover effect for touch devices (optional) */
+@media (hover: none) {
+  .project-link:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* About Section Layout */
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px; /* Space between the text and image */
+  padding: 40px 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1200px; /* Keep the section width manageable */
+}
+
+/* About Text Styling */
+.about-text {
+  flex: 1;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-link {
+  display: inline-block;
+  background-color: #ff4081;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.about-link:hover {
+  background-color: #ff8a65;
+  text-decoration: none;
+}
+
+/* About Image Styling */
+.about-image {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
